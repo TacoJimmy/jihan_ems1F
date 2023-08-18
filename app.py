@@ -210,7 +210,13 @@ def Publish_SubMbPower():
     except:
         PowerMeter.modbus_connection()
         print ("error")
-    
+
+Publish_IAQ()
+Publish_MaMainPower()
+Publish_SubMaPower()
+Publish_MbMainPower()
+Publish_SubMbPower()
+
 schedule.every(5).minutes.do(Publish_IAQ)
 schedule.every(5).minutes.do(Publish_MaMainPower)
 schedule.every(5).minutes.do(Publish_SubMaPower)
