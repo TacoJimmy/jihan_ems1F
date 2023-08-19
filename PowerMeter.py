@@ -359,11 +359,9 @@ if __name__ == '__main__':
         
         try:
             for i in range(4):
-                print (Read_SubPowerCurrnet(i))
-                print (Read_SubPowerkW(i))
-                print (Read_SubPowerkVAR(i))
-                print (Read_SubPowerPF(i))
-                print (Read_SubPowerAE(i))
+                print (Read_SubBPowerkW(i))
+
+
         except:
             modbus_connection()
         
