@@ -356,10 +356,7 @@ def Send_PowerMeter():
 if __name__ == '__main__':
     while True:
         
-        i =2
-        print (str(i+4))
         
-        '''
         try:
             for i in range(4):
                 print (Read_SubPowerCurrnet(i))
@@ -369,5 +366,5 @@ if __name__ == '__main__':
                 print (Read_SubPowerAE(i))
         except:
             modbus_connection()
-        '''
+        
         time.sleep(5)
